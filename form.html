@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form in HTML</title>
+    <style>
+    	
+        #css_table{
+            margin-left: 20%;
+        border:1px solid;
+        background-color: burlywood;}
+           
+    	#forms
+    	{
+    		margin-left: 20px;
+    	}
+    	.marginRight
+    	{
+    		margin-right: 50px;
+    	}
+    	.margin
+    	{
+    		color: black;
+    		margin-left: 50px;
+    	}
+
+    </style>
+</head>
+    
+<body>
+   <table id="css_table">
+       <td>
+   <h2 style="text-align: center;"><u>Please Enter Your Details</u></h2>
+   <h4 style="text-align: center;">Fill the application form below and Submit</h4><br>
+   <form id="forms" method="GET" >
+   Name*<input type="text" class="color" name="username" style="margin-left: 5%;"  placeholder="First Name" required>
+       <input type="text" class="color" name="username" placeholder="Last Name" required><br><br>
+       
+       Email ID*<input type="Email" name="email" class="color" style="margin-left: 5%;" placeholder="Mail@example.com" required><br><br>
+       
+   Phone No.*<input type="text" class="color" style="margin-left: 5%;"  placeholder="Phone Number" required><br><br>
+
+   Gender*<SELECT name="Gender" style="margin-left: 5%;">
+   		<option value="Female">Female</option>
+   		<option value="Male">Male</option>
+       </SELECT><br><br>
+       
+    Citizen*<SELECT name="country" class="margin" style="margin-left: 5%" required>
+           <option value="India">INDIA</option>
+           <option value="USA">UNITED STATES OF AMERICA</option> 
+        <option value="russia">RUSSIA</option>
+        <option value="UK">UNITED KINGDOM</option>
+        </SELECT><br><br>
+
+   	Date of Birth*<input type="text" class="margin"  placeholder="Day" required>
+   	<input type="text" class="margin" placeholder="Month" required>
+       <input type="text" type="text" class="margin" placeholder="Year" required><br><br>
+       
+   	Address*<input type="text" class="margin" style="margin-left: 5%;" placeholder="Street Address" required>
+   	<input type="text" class="margin" placeholder="Street Line2" required><br><br>
+   	<input type="text" class="margin" style="margin-left: 12%;" placeholder="Landmark" required>
+   	<input type="text" class="margin" placeholder="City" required><br><br>
+   	<input type="text" class="margin" style="margin-left: 12%;" placeholder="State/Province" required>
+       <input type="text" class="margin" placeholder="Postal/ZipCode" required><br><br>
+
+   	<input type="submit" style="margin-left: 40%;" value="Submit">
+   </form>
+   </td>
+   </table>
+</body>
+</html>
